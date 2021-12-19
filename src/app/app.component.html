@@ -1,7 +1,7 @@
-<div class="jumbotron text-center">
+<div class="jumbotron text-center animate__animated animate__fadeIn">
   <button class="btn btn-success btn-lg" (click)="tirarDados()">Tirar Dados</button>
   <br>
-  <img class="img" [src]="dadoIzquierda">
-  <img class="img" [src]="dadoDerecha">
-  <h1 *ngIf="numero1 === numero2"><span class="badge badge-success">Ganaste</span></h1>
+  <img class="img animate__animated animate__fadeInDown" [src]="dadoIzquierda">
+  <img class="img animate__animated animate__fadeInDown" [src]="dadoDerecha">
+  <h1 class="animate__animated animate__flip" *ngIf="numero1 === numero2"><span class="badge badge-success">Ganaste</span></h1>
 </div>
